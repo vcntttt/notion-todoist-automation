@@ -15,7 +15,7 @@ class App():
         self.loadTasks()
         self.listBooks()
         self.listAudiovisuals()
-        # self.insertBooks()
+        self.insertBooks()
         self.insertAudiovisuals()
 
     def loadTasks(self):
@@ -52,7 +52,7 @@ class App():
                     },
                     "Author": {
                         "multi_select": [
-                            {"name": author} for author in book.platform
+                            {"name": author} for author in book.author
                         ]
                     }
                 }
